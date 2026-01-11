@@ -1,146 +1,68 @@
-/* ================================
-   RESET Y BASE
-================================ */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* Stylesheet for NOD INDUSTRIAL */ 
+:root{
+  --bg:#fcfeff;
+  --text:#0b0f14;
+  --muted:#5a6675;
+  --line:rgba(11,15,20,0.12);
+  --card:#ffffff;
+  --alt:#f3f5f7;
+  --accent:#B11217;
+  --accent-dark:#8E0F13;
+  --shadow:0 10px 30px rgba(11,15,20,0.08);
+  --radius:14px;
 }
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #ffffff;
-  color: #111827;
-  line-height: 1.6;
+*{box-sizing:border-box;}
+body{
+  margin:0;
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+  color:var(--text);
+  background:var(--bg);
+  line-height:1.55;
 }
-
-/* ================================
-   CONTENEDOR
-================================ */
-.container {
-  width: 90%;
-  max-width: 1100px;
-  margin: 0 auto;
+.container{
+  width:min(1080px,calc(100% - 40px));
+  margin:0 auto;
 }
-
-/* ================================
-   HERO / PORTADA
-================================ */
-.hero {
-  background-color: #0f172a; /* azul industrial oscuro */
-  color: #ffffff;
-  padding: 90px 0;
-  text-align: center;
+.site-header{
+  position:sticky;
+  top:0;
+  background:rgba(252,254,255,0.92);
+  border-bottom:1px solid var(--line);
 }
-
-.hero h1 {
-  font-size: 3rem;
-  letter-spacing: 2px;
-  margin-bottom: 10px;
+.nav{
+  display:flex;
+  justify-content:space-between;
+  padding:14px 0;
 }
-
-.subtitle {
-  font-size: 1.25rem;
-  font-weight: 300;
-  margin-bottom: 20px;
+.brand{
+  font-weight:900;
+  letter-spacing:0.14em;
+  text-decoration:none;
+  color:var(--text);
 }
-
-.intro {
-  max-width: 720px;
-  margin: 0 auto 40px;
-  font-size: 1rem;
-  color: #d1d5db;
+.nav-links a{
+  margin-left:16px;
+  text-decoration:none;
+  color:var(--muted);
+  font-weight:700;
 }
-
-/* ================================
-   BOTÓN
-================================ */
-.btn {
-  display: inline-block;
-  background-color: #16a34a; /* verde técnico */
-  color: #ffffff;
-  padding: 14px 34px;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 4px;
-  transition: background-color 0.2s ease;
+.hero{
+  padding:56px 0 24px;
 }
-
-.btn:hover {
-  background-color: #15803d;
+.kicker{
+  font-weight:900;
+  letter-spacing:0.16em;
+  font-size:12px;
+  color:var(--muted);
 }
-
-/* ================================
-   SECCIONES
-================================ */
-.section {
-  padding: 70px 0;
+h1{
+  font-size:clamp(28px,3.2vw,44px);
 }
-
-.section h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: #020617;
-}
-
-.section p {
-  max-width: 820px;
-  margin-bottom: 20px;
-  font-size: 1rem;
-}
-
-/* ================================
-   LISTAS
-================================ */
-.section ul {
-  list-style: disc;
-  padding-left: 22px;
-}
-
-.section ul li {
-  margin-bottom: 10px;
-}
-
-/* ================================
-   SECCIÓN ALTERNATIVA
-================================ */
-.section.dark {
-  background-color: #f3f4f6; /* gris técnico claro */
-}
-
-/* ================================
-   CONTACTO
-================================ */
-.contact a {
-  color: #0f172a;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/* ================================
-   FOOTER
-================================ */
-footer {
-  background-color: #020617;
-  color: #9ca3af;
-  text-align: center;
-  padding: 22px 0;
-  font-size: 0.9rem;
-}
-
-/* ================================
-   RESPONSIVE
-================================ */
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 2.2rem;
-  }
-
-  .subtitle {
-    font-size: 1.1rem;
-  }
-
-  .section h2 {
-    font-size: 1.6rem;
-  }
+.btn-primary{
+  background:var(--accent);
+  color:#fff;
+  padding:12px 16px;
+  border-radius:12px;
+  text-decoration:none;
+  font-weight:800;
 }
