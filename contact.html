@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#070a0f">
+  <title>Nod Industrial</title>
+  <meta name="description" content="Nod Industrial: ejecución industrial para fotovoltaica, logística y estructuras. Operativa internacional.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Saltar al contenido</a>
+<header class="site-header">
+  <div class="container">
+    <div class="nav">
+      <a class="brand" href="index.html" aria-label="Nod Industrial">
+        <div class="brand-mark" aria-hidden="true"></div>
+        <div>
+          <div class="brand-name">Nod Industrial</div>
+          <div class="brand-sub" data-i18n="hero_kicker">Industrial · Fotovoltaica · Logística</div>
+        </div>
+      </a>
+
+      <nav class="nav-links" aria-label="Navegación principal">
+        <a class="" href="index.html" data-i18n="nav_home">Inicio</a>
+        <a class="" href="about.html" data-i18n="nav_about">Quiénes somos</a>
+        <a class="" href="services.html" data-i18n="nav_services">Qué hacemos</a>
+        <a class="active" href="contact.html" data-i18n="nav_contact">Contacto</a>
+      </nav>
+
+      <div class="nav-cta">
+        <div class="lang" aria-label="Language selector">
+          <button type="button" data-lang="es" class="active">ES</button>
+          <button type="button" data-lang="en">EN</button>
+        </div>
+        <a class="btn primary" href="contact.html#quote" data-i18n="cta_quote">Pedir presupuesto</a>
+        <button class="btn menu-btn" type="button" data-open-drawer aria-label="Menú">Menú</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="drawer" aria-hidden="true">
+  <div class="drawer-panel" role="dialog" aria-label="Menú">
+    <div class="row">
+      <div style="font-weight:750">Nod Industrial</div>
+      <button class="btn" type="button" data-close-drawer>×</button>
+    </div>
+    <a class="" href="index.html" data-i18n="nav_home">Inicio</a>
+    <a class="" href="about.html" data-i18n="nav_about">Quiénes somos</a>
+    <a class="" href="services.html" data-i18n="nav_services">Qué hacemos</a>
+    <a class="active" href="contact.html" data-i18n="nav_contact">Contacto</a>
+    <div style="height:8px"></div>
+    <a class="btn primary" href="contact.html#quote" style="display:flex; justify-content:center" data-i18n="cta_quote">Pedir presupuesto</a>
+  </div>
+</div>
+
+<main id="main">
+
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html" data-i18n="nav_home">Inicio</a> · <span data-i18n="nav_contact">Contacto</span></div>
+    <h1 data-i18n="contact_title">Contacto</h1>
+    <p class="lead" data-i18n="contact_lead">Cuéntanos lo esencial y te respondemos con una propuesta clara.</p>
+    <p class="p" data-i18n="contact_hint">Si quieres acelerar, usa el bloque de “Presupuesto rápido” y envíanos el texto generado.</p>
+  </div>
+</section>
+
+<section class="section" id="quote">
+  <div class="container">
+    <div class="grid2">
+      <div class="quote">
+        <h2 style="margin:0 0 10px" data-i18n="sec_quote_title">Presupuesto rápido</h2>
+        <p data-i18n="sec_quote_p">Para una respuesta ágil, indícanos: ubicación del proyecto, fechas previstas...</p>
+
+        <form class="form" data-quote-form>
+          <div class="field">
+            <label data-i18n="form_loc">Ubicación del proyecto</label>
+            <input name="loc" type="text" data-i18n-placeholder="form_loc" placeholder="Ubicación del proyecto">
+          </div>
+          <div class="field">
+            <label data-i18n="form_dates">Fechas previstas</label>
+            <input name="dates" type="text" data-i18n-placeholder="form_dates" placeholder="Fechas previstas">
+          </div>
+          <div class="field">
+            <label data-i18n="form_team">Nº de personas</label>
+            <input name="team" type="text" data-i18n-placeholder="form_team" placeholder="Nº de personas">
+          </div>
+          <div class="field">
+            <label data-i18n="form_docs">Documentación disponible</label>
+            <input name="docs" type="text" data-i18n-placeholder="form_docs" placeholder="Documentación disponible">
+          </div>
+          <div class="field full">
+            <label data-i18n="form_scope">Alcance de los trabajos</label>
+            <textarea name="scope" data-i18n-placeholder="form_scope" placeholder="Alcance de los trabajos"></textarea>
+          </div>
+          <div class="field full">
+            <button class="btn primary" type="submit" data-i18n="form_send">Preparar solicitud</button>
+            <div class="note" data-i18n="form_note">Este formulario no envía emails automáticamente...</div>
+          </div>
+          <div class="field full">
+            <label>Texto generado</label>
+            <textarea data-quote-output readonly></textarea>
+          </div>
+        </form>
+      </div>
+
+      <div class="card">
+        <h3 style="margin:0 0 10px">Datos de contacto</h3>
+        <p class="p" style="margin:0 0 14px">De momento, completa aquí tus datos reales. En GitHub Pages no hay backend; cuando quieras un formulario que envíe emails, lo montamos con un servicio (Formspree, Netlify Forms, etc.).</p>
+
+        <div class="grid2">
+          <div class="card" style="background:rgba(255,255,255,.03)">
+            <div class="badge"><span class="icon"></span><span data-i18n="contact_email">Email</span></div>
+            <p style="margin:0; font-weight:700" data-contact-email>info@nodindustrial.com</p>
+          </div>
+          <div class="card" style="background:rgba(255,255,255,.03)">
+            <div class="badge"><span class="icon"></span><span data-i18n="contact_phone">Teléfono</span></div>
+            <p style="margin:0; font-weight:700" data-contact-phone>+34 600 000 000</p>
+          </div>
+        </div>
+
+        <div style="height:12px"></div>
+
+        <div class="card" style="background:rgba(255,255,255,.03)">
+          <div class="badge"><span class="icon"></span><span data-i18n="contact_area">Ámbito</span></div>
+          <p style="margin:0" data-i18n="contact_area_v">Internacional (Europa +)</p>
+        </div>
+
+        <div style="height:14px"></div>
+        <button class="btn" type="button" data-copy-contact data-i18n="contact_copy">Copiar datos</button>
+
+        <div style="height:14px"></div>
+        <div class="gimg" style="min-height:260px"><img src="assets/img/photo03.jpg" alt="Obra (foto 3)"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-row">
+      <div data-i18n="footer_rights">© Nod Industrial. Todos los derechos reservados.</div>
+      <div class="small-links">
+        <a href="services.html" data-i18n="nav_services">Qué hacemos</a>
+        <a href="contact.html" data-i18n="nav_contact">Contacto</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
