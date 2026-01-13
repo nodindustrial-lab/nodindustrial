@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Contacto. NOD Industrial. Solicita propuesta.">
+  <title>Contacto | NOD Industrial</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Ir a Inicio">
+      <img src="assets/logo.png" alt="NOD Industrial" onerror="this.style.display='none'">
+      <span>NOD Industrial</span>
+    </a>
+
+    <input id="nav-toggle" class="nav-toggle" type="checkbox" aria-label="Abrir menú">
+    <label class="burger" for="nav-toggle" aria-hidden="true"><span></span></label>
+
+    <nav class="nav-links" aria-label="Navegación principal">
+      <a class="" href="empresa.html">Empresa</a>
+      <a class="" href="servicios.html">Qué hacemos</a>
+      <a class="" href="metodo.html">Cómo trabajamos</a>
+      <a class="active" href="contacto.html">Contacto</a>
+    </nav>
+
+    <div class="cta">
+      <a class="btn ghost" href="contacto.html">Solicitar información</a>
+      <a class="btn primary" href="contacto.html#form">Pedir propuesta</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="pagehead">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Inicio</a> / Contacto</div>
+      <h1>Contacto</h1>
+      <p>
+        Si quieres una propuesta rápida, envíanos los datos clave. Responderemos con preguntas concretas o con una estimación inicial.
+      </p>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="section" id="form">
+    <div class="container">
+      <div class="grid">
+        <div class="card col-7">
+          <div class="tag">Formulario</div>
+          <h3 style="margin-top:0">Solicitud de propuesta</h3>
+
+          <form class="form" id="quoteForm">
+            <div class="field">
+              <label for="company">Empresa (opcional)</label>
+              <input id="company" name="company" type="text" placeholder="Nombre de la empresa">
+            </div>
+
+            <div class="grid" style="gap:12px">
+              <div class="field col-6">
+                <label for="name">Nombre</label>
+                <input id="name" name="name" type="text" required placeholder="Tu nombre">
+              </div>
+              <div class="field col-6">
+                <label for="email">Correo</label>
+                <input id="email" name="email" type="email" required placeholder="tu@empresa.com">
+              </div>
+            </div>
+
+            <div class="grid" style="gap:12px">
+              <div class="field col-6">
+                <label for="location">Ubicación del proyecto</label>
+                <input id="location" name="location" type="text" required placeholder="Ciudad / Provincia">
+              </div>
+              <div class="field col-6">
+                <label for="dates">Fechas previstas</label>
+                <input id="dates" name="dates" type="text" required placeholder="Inicio / duración / turnos">
+              </div>
+            </div>
+
+            <div class="grid" style="gap:12px">
+              <div class="field col-6">
+                <label for="people">Personas requeridas</label>
+                <input id="people" name="people" type="text" required placeholder="Nº de personas">
+              </div>
+              <div class="field col-6">
+                <label for="scope">Alcance</label>
+                <input id="scope" name="scope" type="text" required placeholder="Qué hay que ejecutar">
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="docs">Documentación disponible</label>
+              <input id="docs" name="docs" type="text" placeholder="Planos, mediciones, PRL, accesos, etc.">
+            </div>
+
+            <div class="field">
+              <label for="notes">Comentarios</label>
+              <textarea id="notes" name="notes" placeholder="Cualquier detalle relevante (restricciones, accesos, horario, etc.)"></textarea>
+            </div>
+
+            <button class="btn primary" type="submit">Enviar por correo</button>
+            <small>
+              El botón abre tu cliente de correo con el mensaje preparado. Si prefieres, escríbenos directamente a
+              <a href="mailto:nodindustrial@gmail.com">nodindustrial@gmail.com</a>.
+            </small>
+          </form>
+        </div>
+
+        <div class="card col-5">
+          <div class="tag">Datos</div>
+          <h3 style="margin-top:0">Canales directos</h3>
+
+          <div class="kpi">
+            <strong>Correo</strong>
+            <span><a href="mailto:nodindustrial@gmail.com">nodindustrial@gmail.com</a></span>
+          </div>
+          <div style="height:10px"></div>
+          <div class="kpi">
+            <strong>Teléfono</strong>
+            <span><a href="tel:+34613133308">+34 613 13 33 08</a></span>
+          </div>
+
+          <div style="height:14px"></div>
+
+          <div class="help">
+            <p>
+              Para una respuesta ágil, indícanos: ubicación del proyecto, fechas previstas, número de personas requeridas,
+              alcance de los trabajos y documentación disponible.
+            </p>
+          </div>
+
+          <div style="height:14px"></div>
+
+          <small>
+            Consejo operativo: si ya tienes planos o mediciones, adjúntalos en el correo. Acelera el primer estimado.
+          </small>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <strong style="letter-spacing:0.06em;text-transform:uppercase;font-size:12px;">NOD Industrial</strong>
+      <small>Integración y montaje de sistemas industriales. Actuación en Unión Europea e internacional.</small>
+    </div>
+    <div style="display:flex;gap:14px;align-items:center;flex-wrap:wrap;">
+      <a href="mailto:nodindustrial@gmail.com">nodindustrial@gmail.com</a>
+      <a href="tel:+34613133308">+34 613 13 33 08</a>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+(function () {
+  var form = document.getElementById('quoteForm');
+  if (!form) return;
+
+  function v(id) {
+    var el = document.getElementById(id);
+    return el && el.value ? el.value.trim() : '';
+  }
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    var subject = 'Solicitud de propuesta — NOD Industrial';
+    var lines = [
+      'SOLICITUD DE PROPUESTA',
+      '----------------------',
+      'Empresa: ' + (v('company') || '-'),
+      'Nombre: ' + v('name'),
+      'Correo: ' + v('email'),
+      '',
+      'DATOS DEL PROYECTO',
+      '------------------',
+      'Ubicación: ' + v('location'),
+      'Fechas previstas: ' + v('dates'),
+      'Personas requeridas: ' + v('people'),
+      'Alcance: ' + v('scope'),
+      'Documentación disponible: ' + (v('docs') || '-'),
+      '',
+      'Comentarios',
+      '----------',
+      (v('notes') || '-')
+    ];
+
+    var body = encodeURIComponent(lines.join('\n'));
+    var mailto = 'mailto:nodindustrial@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + body;
+    window.location.href = mailto;
+  });
+})();
+</script>
+</body>
+</html>
