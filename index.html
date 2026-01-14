@@ -1,234 +1,226 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#070a0f">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Nod Industrial</title>
-  <meta name="description" content="Nod Industrial: ejecución industrial para fotovoltaica, logística y estructuras. Operativa internacional.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <meta name="description" content="Nod Industrial. Montaje industrial, logística y fotovoltaica. Operativa nacional." />
+
+  <!-- CSS en raíz (importante) -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Básico para que no se vea “raro” si el CSS tarda -->
+  <style>
+    .no-css { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; padding: 16px; }
+    .no-css a { color: inherit; }
+  </style>
 </head>
+
 <body>
-<a class="skip" href="#main">Saltar al contenido</a>
-<header class="site-header">
-  <div class="container">
-    <div class="nav">
-      <a class="brand" href="index.html" aria-label="Nod Industrial">
-        <div class="brand-mark" aria-hidden="true"></div>
-        <div>
-          <div class="brand-name">Nod Industrial</div>
-          <div class="brand-sub" data-i18n="hero_kicker">Industrial · Fotovoltaica · Logística</div>
-        </div>
+  <a class="skip" href="#main">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Nod Industrial - Inicio">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">Nod Industrial</span>
       </a>
 
-      <nav class="nav-links" aria-label="Navegación principal">
-        <a class="active" href="index.html" data-i18n="nav_home">Inicio</a>
-        <a class="" href="about.html" data-i18n="nav_about">Quiénes somos</a>
-        <a class="" href="services.html" data-i18n="nav_services">Qué hacemos</a>
-        <a class="" href="contact.html" data-i18n="nav_contact">Contacto</a>
+      <nav class="site-nav" aria-label="Navegación principal">
+        <a class="nav-link is-active" href="index.html">Inicio</a>
+        <a class="nav-link" href="about.html">Empresa</a>
+        <a class="nav-link" href="services.html">Servicios</a>
+        <a class="nav-link" href="contact.html">Contacto</a>
       </nav>
 
-      <div class="nav-cta">
-        <div class="lang" aria-label="Language selector">
-          <button type="button" data-lang="es" class="active">ES</button>
-          <button type="button" data-lang="en">EN</button>
-        </div>
-        <a class="btn primary" href="contact.html#quote" data-i18n="cta_quote">Pedir presupuesto</a>
-        <button class="btn menu-btn" type="button" data-open-drawer aria-label="Menú">Menú</button>
+      <div class="lang">
+        <span class="lang-pill is-active">ES</span>
+        <a class="lang-pill" href="index.html?lang=en" aria-label="Switch to English">EN</a>
       </div>
     </div>
-  </div>
-</header>
+  </header>
 
-<div class="drawer" aria-hidden="true">
-  <div class="drawer-panel" role="dialog" aria-label="Menú">
-    <div class="row">
-      <div style="font-weight:750">Nod Industrial</div>
-      <button class="btn" type="button" data-close-drawer>×</button>
-    </div>
-    <a class="active" href="index.html" data-i18n="nav_home">Inicio</a>
-    <a class="" href="about.html" data-i18n="nav_about">Quiénes somos</a>
-    <a class="" href="services.html" data-i18n="nav_services">Qué hacemos</a>
-    <a class="" href="contact.html" data-i18n="nav_contact">Contacto</a>
-    <div style="height:8px"></div>
-    <a class="btn primary" href="contact.html#quote" style="display:flex; justify-content:center" data-i18n="cta_quote">Pedir presupuesto</a>
-  </div>
-</div>
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="kicker">Operativa nacional · Entrega a tiempo · Seguridad primero</p>
+          <h1 class="hero-title">Montaje industrial y fotovoltaica con estándares de gran proyecto.</h1>
+          <p class="hero-subtitle">
+            Equipos orientados a ejecución: estructuras, logística interna, estanterías y trabajos auxiliares.
+            Coordinación, ritmo y control.
+          </p>
 
-<main id="main">
-
-<section class="hero">
-  <div class="container">
-    <div class="hero-inner">
-      <div>
-        <div class="kicker"><span class="dot"></span><span data-i18n="hero_kicker">Industrial · Fotovoltaica · Logística</span></div>
-        <h1 data-i18n="hero_title">Ejecución industrial con estándar de obra grande.</h1>
-        <p class="lead" data-i18n="hero_lead">Equipos operativos para proyectos de fotovoltaica, logística y estructuras...</p>
-        <div class="hero-actions">
-          <a class="btn primary" href="services.html" data-i18n="hero_btn_1">Ver servicios</a>
-          <a class="btn" href="contact.html" data-i18n="hero_btn_2">Contactar</a>
-        </div>
-      </div>
-
-      <div class="hero-card">
-        <div class="hero-media">
-          <!-- Replace these images with your 8 project photos in assets/img/ -->
-          <img src="assets/img/photo01.jpg" alt="Trabajo industrial en obra (foto 1)">
-        </div>
-        <div class="hero-stats">
-          <div class="stat">
-            <div class="num" data-i18n="stat_1_num">Despliegue</div>
-            <div class="lbl" data-i18n="stat_1_lbl">Equipos movilizables por proyecto</div>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="services.html">Ver servicios</a>
+            <a class="btn btn-ghost" href="contact.html">Solicitar contacto</a>
           </div>
-          <div class="stat">
-            <div class="num" data-i18n="stat_2_num">Seguridad</div>
-            <div class="lbl" data-i18n="stat_2_lbl">Metodología y control en obra</div>
-          </div>
-          <div class="stat">
-            <div class="num" data-i18n="stat_3_num">Plazos</div>
-            <div class="lbl" data-i18n="stat_3_lbl">Planificación y ejecución</div>
-          </div>
-          <div class="stat">
-            <div class="num" data-i18n="stat_4_num">Internacional</div>
-            <div class="lbl" data-i18n="stat_4_lbl">Operativa en Europa y más</div>
-          </div>
-        </div>
-      </div>
 
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <div class="section-head">
-      <div>
-        <h2 data-i18n="sec_1_title">Lo que resolvemos</h2>
-        <p class="p" data-i18n="sec_1_p">Nos centramos en ejecución: mano de obra cualificada, coordinación y control de calidad.</p>
-      </div>
-    </div>
-
-    <div class="grid3">
-      <div class="card">
-        <div class="badge"><span class="icon"></span><span data-i18n="card1_title">Fotovoltaica utility-scale</span></div>
-        <p data-i18n="card1_p">Montaje mecánico, trackers, estructura fija, hincado y tareas auxiliares de campo.</p>
-      </div>
-      <div class="card">
-        <div class="badge"><span class="icon"></span><span data-i18n="card2_title">Centros logísticos y estanterías</span></div>
-        <p data-i18n="card2_p">Montaje de estanterías, pórticos, pasarelas y elementos de almacén.</p>
-      </div>
-      <div class="card">
-        <div class="badge"><span class="icon"></span><span data-i18n="card3_title">Mantenimiento y soporte industrial</span></div>
-        <p data-i18n="card3_p">Apoyo en paradas, correctivos, montaje y retrabajos.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <div class="section-head">
-      <div>
-        <h2 data-i18n="sec_gallery_title">Trabajos en campo</h2>
-        <p class="p" data-i18n="sec_gallery_p">Imágenes reales de obra. Resultado por encima de presentación.</p>
-      </div>
-      <a class="btn" href="services.html" data-i18n="hero_btn_1">Ver servicios</a>
-    </div>
-
-    <div class="gallery">
-      <div class="gimg g1"><img src="assets/img/photo02.jpg" alt="Proyecto (foto 2)"></div>
-      <div class="gimg"><img src="assets/img/photo03.jpg" alt="Proyecto (foto 3)"></div>
-      <div class="gimg"><img src="assets/img/photo04.jpg" alt="Proyecto (foto 4)"></div>
-      <div class="gimg"><img src="assets/img/photo05.jpg" alt="Proyecto (foto 5)"></div>
-      <div class="gimg"><img src="assets/img/photo06.jpg" alt="Proyecto (foto 6)"></div>
-    </div>
-    <p class="note">Nota: coloca tus ocho imágenes en <strong>assets/img</strong> con los nombres <strong>photo01.jpg</strong> a <strong>photo08.jpg</strong>.</p>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <div class="grid2">
-      <div class="quote">
-        <h2 style="margin:0 0 10px" data-i18n="sec_quote_title">Presupuesto rápido</h2>
-        <p data-i18n="sec_quote_p">Para una respuesta ágil, indícanos: ubicación del proyecto, fechas previstas...</p>
-
-        <form class="form" data-quote-form>
-          <div class="field">
-            <label data-i18n="form_loc">Ubicación del proyecto</label>
-            <input name="loc" type="text" data-i18n-placeholder="form_loc" placeholder="Ubicación del proyecto">
-          </div>
-          <div class="field">
-            <label data-i18n="form_dates">Fechas previstas</label>
-            <input name="dates" type="text" data-i18n-placeholder="form_dates" placeholder="Fechas previstas">
-          </div>
-          <div class="field">
-            <label data-i18n="form_team">Nº de personas</label>
-            <input name="team" type="text" data-i18n-placeholder="form_team" placeholder="Nº de personas">
-          </div>
-          <div class="field">
-            <label data-i18n="form_docs">Documentación disponible</label>
-            <input name="docs" type="text" data-i18n-placeholder="form_docs" placeholder="Documentación disponible">
-          </div>
-          <div class="field full">
-            <label data-i18n="form_scope">Alcance de los trabajos</label>
-            <textarea name="scope" data-i18n-placeholder="form_scope" placeholder="Alcance de los trabajos"></textarea>
-          </div>
-          <div class="field full">
-            <button class="btn primary" type="submit" data-i18n="form_send">Preparar solicitud</button>
-            <div class="note" data-i18n="form_note">Este formulario no envía emails automáticamente...</div>
-          </div>
-          <div class="field full">
-            <label style="display:flex; justify-content:space-between; align-items:center">
-              <span>Texto generado</span><span style="font-size:12px; color:var(--muted)">Copy</span>
-            </label>
-            <textarea data-quote-output readonly></textarea>
-          </div>
-        </form>
-      </div>
-
-      <div class="card" style="padding:0; overflow:hidden">
-        <div class="hero-media" style="aspect-ratio: 3/4">
-          <img src="assets/img/photo07.jpg" alt="Proyecto (foto 7)">
-        </div>
-        <div style="padding:18px">
-          <h3 style="margin:0 0 10px" data-i18n="sec_trust_title">Cómo trabajamos</h3>
-          <div class="grid3" style="grid-template-columns:1fr; gap:12px">
-            <div class="card" style="background:rgba(255,255,255,.03)">
-              <h3 data-i18n="trust1_title">Arranque controlado</h3>
-              <p data-i18n="trust1_p">Checklist de documentación, acceso, medios y riesgos.</p>
+          <div class="hero-metrics">
+            <div class="metric">
+              <div class="metric-value">Industrial</div>
+              <div class="metric-label">Estructuras · Logística · Montaje</div>
             </div>
-            <div class="card" style="background:rgba(255,255,255,.03)">
-              <h3 data-i18n="trust2_title">Producción medible</h3>
-              <p data-i18n="trust2_p">Objetivos diarios, reporting y trazabilidad.</p>
+            <div class="metric">
+              <div class="metric-value">PV</div>
+              <div class="metric-label">Hincado · Montaje · Auxiliares</div>
             </div>
-            <div class="card" style="background:rgba(255,255,255,.03)">
-              <h3 data-i18n="trust3_title">Calidad y seguridad</h3>
-              <p data-i18n="trust3_p">Procedimientos, supervisión y cierre de puntos críticos.</p>
+            <div class="metric">
+              <div class="metric-value">Península</div>
+              <div class="metric-label">Movilidad nacional</div>
             </div>
           </div>
         </div>
+
+        <div class="hero-media" aria-label="Galería de proyectos">
+          <div class="media-card">
+            <img src="assets/img/photo03.jpg" alt="Estructuras fotovoltaicas" loading="lazy" />
+          </div>
+          <div class="media-card">
+            <img src="assets/img/photo01.jpg" alt="Montaje industrial de gran escala" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CREDENCIALES / VALOR -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Qué aportamos</h2>
+        <p class="section-lead">
+          No vendemos humo. Ejecutamos: planificación simple, personal cualificado y foco en productividad.
+        </p>
+
+        <div class="cards">
+          <article class="card">
+            <h3>Ritmo de obra</h3>
+            <p>Cuadrillas orientadas a hitos: montaje, ajustes, remates y entrega.</p>
+          </article>
+          <article class="card">
+            <h3>Seguridad y orden</h3>
+            <p>Criterio preventivo, señalización y disciplina de trabajo para evitar paradas.</p>
+          </article>
+          <article class="card">
+            <h3>Coordinación</h3>
+            <p>Comunicación clara con jefatura/encargados. Menos fricción, más avance.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICIOS DESTACADOS -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="split-head">
+          <div>
+            <h2 class="section-title">Servicios principales</h2>
+            <p class="section-lead">Foco en industrial y fotovoltaica. Especialidad: estructura y logística.</p>
+          </div>
+          <div class="split-actions">
+            <a class="btn btn-primary" href="services.html">Ver catálogo completo</a>
+          </div>
+        </div>
+
+        <div class="service-grid">
+          <article class="service">
+            <h3>Fotovoltaica utility-scale</h3>
+            <ul>
+              <li>Montaje de estructura y pórticos</li>
+              <li>Hincado / replanteo / ajustes</li>
+              <li>Remates y trabajos auxiliares</li>
+            </ul>
+          </article>
+
+          <article class="service">
+            <h3>Logística y almacenes</h3>
+            <ul>
+              <li>Montaje de estanterías industriales</li>
+              <li>Pasillos, protecciones y señalización</li>
+              <li>Reconfiguración y ampliaciones</li>
+            </ul>
+          </article>
+
+          <article class="service">
+            <h3>Estructuras metálicas</h3>
+            <ul>
+              <li>Montaje y alineación</li>
+              <li>Refuerzos, ajustes y remates</li>
+              <li>Apoyo a contratas principales</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERÍA -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Imágenes reales</h2>
+        <p class="section-lead">Fotos de obra: industrial y fotovoltaica.</p>
+
+        <div class="gallery">
+          <figure class="gallery-item">
+            <img src="assets/img/photo01.jpg" alt="Estructuras industriales de gran altura" loading="lazy" />
+          </figure>
+          <figure class="gallery-item">
+            <img src="assets/img/photo02.jpg" alt="Fila de estructuras fotovoltaicas en campo" loading="lazy" />
+          </figure>
+          <figure class="gallery-item">
+            <img src="assets/img/photo03.jpg" alt="Paneles fotovoltaicos alineados" loading="lazy" />
+          </figure>
+          <figure class="gallery-item">
+            <img src="assets/img/photo04.jpg" alt="Instalación industrial con tuberías" loading="lazy" />
+          </figure>
+          <figure class="gallery-item">
+            <img src="assets/img/photo05.jpg" alt="Maquinaria en operación en obra" loading="lazy" />
+          </figure>
+          <figure class="gallery-item">
+            <img src="assets/img/photo06.jpg" alt="Detalle de estructura de panel" loading="lazy" />
+          </figure>
+          <figure class="gallery-item">
+            <img src="assets/img/photo07.jpg" alt="Pasillo entre estanterías industriales" loading="lazy" />
+          </figure>
+          <figure class="gallery-item">
+            <img src="assets/img/photo08.jpg" alt="Detalle de montaje industrial" loading="lazy" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="cta">
+      <div class="container cta-inner">
+        <div>
+          <h2>¿Tienes obra en marcha y necesitas ejecución?</h2>
+          <p>Cuéntanos ubicación, alcance y fechas. Te decimos si entramos y con qué equipo.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn btn-primary" href="contact.html">Contactar</a>
+          <a class="btn btn-ghost" href="services.html">Ver servicios</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <strong>Nod Industrial</strong>
+        <p class="muted">Industrial · Logística · Fotovoltaica</p>
+      </div>
+      <div class="footer-right">
+        <a href="about.html">Empresa</a>
+        <a href="services.html">Servicios</a>
+        <a href="contact.html">Contacto</a>
       </div>
     </div>
-  </div>
-</section>
+  </footer>
 
-</main>
-
-<footer>
-  <div class="container">
-    <div class="footer-row">
-      <div data-i18n="footer_rights">© Nod Industrial. Todos los derechos reservados.</div>
-      <div class="small-links">
-        <a href="services.html" data-i18n="nav_services">Qué hacemos</a>
-        <a href="contact.html" data-i18n="nav_contact">Contacto</a>
-      </div>
+  <noscript>
+    <div class="no-css">
+      Esta web funciona sin JavaScript. Si ves algo raro, revisa que el CSS esté cargando.
     </div>
-  </div>
-</footer>
-
-<script src="assets/js/i18n.js"></script>
-<script src="assets/js/main.js"></script>
+  </noscript>
 </body>
 </html>
